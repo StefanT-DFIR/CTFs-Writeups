@@ -39,36 +39,36 @@ The artifacts was collected from keep.db database located at:
 
 Title of the notes:
 
-![[Images/Notes_Title.png]]
+![Alt Text](Images/Notes_Title.png)
 
 Context of the notes:
 
-![[Images/Notes_Context.png]]
+![Alt Text](Images/Notes_Context.png)
 
 Creation time displayed in the the Unix timestamp:
-![[Images/Notes_Creationg_Time.png]]
+![Alt Text](Images/Notes_Creationg_Time.png)
 
 Twinkles downloaded files:
 
-![[Images/Downloaded files.png]]
+![Alt Text](Images/Downloadedfiles.png)
 
 At 2024-11-05 12:04:24 a suspect Twinkles shared these files with Krampus using Mega chat application. Claiming that he don't remember passwords that he used. 
 
-![[Images/Zipping.png]]
+![Alt Text](Images/Zipping.png)
 
-![[Images/info-send(1).zip sent.png]]
+![Alt Text](Images/info-send(1).zipsent.png)
 
 The files "zippping(1).png" and "info-send(1).zip" are collected through the forensic  acquisition process. 
 
 The first file "zippping(1).png" is the screenshot of the 7z application when "info-send(1).zip" was prepared to be created. The screenshot provides very useful information, Twinkle uses the old encryption method ZipCrypto and the length of the password is 11 characters.
 
-![[Images/zipping information.png]]
+![Alt Text](Images/zippinginformation.png)
 
 The second file is the "info-send(1).zip" itself, location of the file is "\storage\emulated\0\Download", the file is password protected like we expected and the archive contains two files:
 	- Emails.txt
 	- SANTA-CONFIDENTIAL-PROD-ITR.kdbx
 
-![[Images/Archive context.png]]
+![Alt Text](Images/Archivecontext.png)
 
 To confirm what exact information Twinkle sent to Krampus, we will try to exploit ZipCrypto vulnerability and extract files from the "info-send(1).zip" archive.
 To be able to extract files, we will use open-source tool bkcrack (https://github.com/kimci86/bkcrack).
@@ -76,17 +76,17 @@ To be able to extract files, we will use open-source tool bkcrack (https://githu
 To be able to extract the keys, bkcrack requires at least 12 bytes of known plaintext. At least 8 of them must be contiguous. 
 Our focus will be at Email.txt and try to guess the first email address that Email.txt contains. To be sure to have a valid email, we will use Twinkle's email that he leaked in the conversation with the Krampus.
 
-![[Images/Twinkles leaked email.png]]
+![Alt Text](Images/Twinklesleakedemail.png)
 
 Create a file that contains strings "TwinkleSnowberry@north.pole" and store it in .txt file. In our case that will be htb.txt
 
 Executes bkcrack tool to extract keys:
 
-![[Images/Key_Extraction.png]]
+![Alt Text](Images/Key_Extraction.png)
 
 After retrieving the key, utilize again bkcrack to bruteforce password. The "?p" parameter is for the ASCII printable characters and 11 stands for the number of characters, which we knew from the "zippping(1).png" file.
 
-![[Images/BKCrack password cracked.png]]
+![Alt Text]([Images/BKCrackpasswordcracked.png)
 
 The password is correct, the archive is successful extracted.
 
@@ -122,11 +122,11 @@ Using the John The Ripper utilities (https://github.com/openwall/john) to succes
 
 What we need first is to extract hash of the password from the kdbx file, with the keepass2john.exe and forward extracted hash to the John the ripper tool using "rockyou.txt" as the wordlist.
 
-![[Images/JohnTheRipper.png]]
+![Alt Text](Images/JohnTheRipper.png)
 
 Confirmed access to the KeePass database:
 
-![[Images/Santa workstation.png]]
+![Alt Text](Images/Santaworkstation.png)
 
 
 ## Questions
