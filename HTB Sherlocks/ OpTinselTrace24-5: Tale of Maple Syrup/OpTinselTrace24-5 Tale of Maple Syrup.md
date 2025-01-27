@@ -16,7 +16,7 @@ The tool will create HTMLs output of the parsed data, looking through the output
 Looks like Twinkle is looking to betray Santa's and help Kramups in his evil plans, for certain amount of cash, precisely 69000$.
 
 Krampus is demanding to get credentials for remote login and Santa's computer password.
-After some time Twinkle managed to collect some intel: emails of the employees and KeePass database file that contains Santa's computer password, but in all of the hurry he couldn't remember the password for the zip file so he left Krampus to figure it out alone, which he did and after that heproceeded to send a phishing email at one of the Santa's developer (Bingle Jollybeard), which was successful and where the story of the HtB Sherlock "OpTinselTrace24-1: Sneaky Cookies" begins. The whole conversation between Krampus and Twinkle is locate at the bottom of the writeup.
+After some time Twinkle managed to collect some intel: emails of the employees and KeePass database file that contains Santa's computer password, but in all of the hurry he couldn't remember the password for the zip file so he left Krampus to figure it out alone, which he did and after that he proceeded to send a phishing email at one of the Santa's developer (Bingle Jollybeard), which was successful and where the story of the HtB Sherlock "OpTinselTrace24-1: Sneaky Cookies" begins. The whole conversation between Krampus and Twinkle is locate at the bottom of the writeup.
 
 
 Going through the installed applications, we determined that Mega applications is installed under ID mega.privacy.android.app and the date of installation is 2024-11-04 11:24.28. 
