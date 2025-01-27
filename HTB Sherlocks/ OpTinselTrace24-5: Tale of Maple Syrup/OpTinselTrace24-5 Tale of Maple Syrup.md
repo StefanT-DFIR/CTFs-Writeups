@@ -11,7 +11,7 @@ Downloaded files are parts of Android devices of the insider Twinkle Snowberry, 
 
 The tool will create HTMLs output of the parsed data, looking through the outputs we can identify application MEGA for private chatting, where we spotted our suspected insider Twinkle chatting with Krampus. 
 
-![[Alt Text](Images/Mega_Chat.png)]
+![Alt Text](Images/Mega_Chat.png)
 
 Looks like Twinkle is looking to betray Santa's and help Kramups in his evil plans, for certain amount of cash, precisely 69000$.
 
