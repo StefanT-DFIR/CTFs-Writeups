@@ -87,8 +87,9 @@ Executes bkcrack tool to extract keys:
 
 After retrieving the key, utilize again bkcrack to bruteforce password. The "?p" parameter is for the ASCII printable characters and 11 stands for the number of characters, which we knew from the "zippping(1).png" file.
 
-![Alt Text](Images/PasswordCrack.png)
+![Alt Text](Images/Key_Extraction.png)
 
+Passwordcrack.png
 The password is correct, the archive is successful extracted.
 
 File Emails.txt contains:
