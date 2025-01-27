@@ -1,8 +1,8 @@
 ## Scenario
 
-```
+
 Twinkle Snowberry who works as chief decorator in Santa’s workshop for years is suspected of assisting Krampus and his notorious Cyber group. Word is he has been having arguments with Santa for months. The most unfortunate thing finally happened, Santa's Workstation was ransomed. Twinkle’s Company owned phone is seized and a forensics acquisition is taking place to identify the suspicious activity.
-```
+
 
 
 Downloaded files are parts of Android devices of the insider Twinkle Snowberry, to analyze this type of artifacts utilize an open source tool ALEAPP (https://github.com/abrignoni/ALEAPP). Analyzing through GUI version, pass the artifacts to the tool and select output folder, select all artifacts to be analyzed.
