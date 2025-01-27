@@ -53,13 +53,13 @@ Twinkles downloaded files:
 
 ![Alt Text](Images/Downloadedfiles.png)
 
-At 2024-11-05 12:04:24 a suspect Twinkles shared these files with Krampus using Mega chat application. Claiming that he don't remember passwords that he used. 
+At 2024-11-05 12:04:24 a suspect Twinkles shared these files with Krampus using Mega chat application. Claiming that he doesn't remember password that he used. 
 
 ![Alt Text](Images/Zipping.png)
 
 ![Alt Text](Images/info-send(1).zipsent.png)
 
-The files "zippping(1).png" and "info-send(1).zip" are collected through the forensic  acquisition process. 
+The files "zippping(1).png" and "info-send(1).zip" are collected through the forensic acquisition process. 
 
 The first file "zippping(1).png" is the screenshot of the 7z application when "info-send(1).zip" was prepared to be created. The screenshot provides very useful information, Twinkle uses the old encryption method ZipCrypto and the length of the password is 11 characters.
 
