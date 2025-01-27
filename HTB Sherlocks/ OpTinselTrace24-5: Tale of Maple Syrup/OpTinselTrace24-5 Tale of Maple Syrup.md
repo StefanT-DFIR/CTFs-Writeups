@@ -7,7 +7,7 @@ Twinkle Snowberry who works as chief decorator in Santa’s workshop for years i
 
 Downloaded files are parts of Android devices of the insider Twinkle Snowberry, to analyze this type of artifacts utilize an open source tool ALEAPP (https://github.com/abrignoni/ALEAPP). Analyzing through GUI version, pass the artifacts to the tool and select output folder, select all artifacts to be analyzed.
 
-![Test]([Images/OT24-5 info-send(1).zip sent.png](https://github.com/StefanT-DFIR/CTFs-Writeups/blob/f2b4bb9450122f1979fe34831cfb5454047096d6/HTB%20Sherlocks/%20OpTinselTrace24-5%3A%20Tale%20of%20Maple%20Syrup/Images/OT24-5%20Installed_Apps.png))
+![Image](../Images/OT24-5 Installed_Apps.png)
 
 The tool will create HTMLs output of the parsed data, looking through the outputs we can identify application MEGA for private chatting, where we spotted our suspected insider Twinkle chatting with Krampus. 
 
